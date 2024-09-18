@@ -24,7 +24,8 @@ const Hero = () => {
                     <TextGenerateEffect words={"From Vision to Interaction"}
                                         className="text-center text-[40px] md:text-5xl lg:text-6xl"/>
                     <p className="mb-4 text-center text-sm md:text-lg md:tracking-wider lg:text-2xl">
-                        Hi, I'm Garik Sandrosyan, a Front-end Developer passionate about building engaging and impactful user experiences.
+                        Hi, I&apos;m Garik Sandrosyan, a Front-end Developer passionate about building engaging and
+                        impactful user experiences.
                     </p>
                     <a href="#projects">
                         <MagicButton
