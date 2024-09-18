@@ -11,7 +11,7 @@ const Footer = () => {
                 <h1 className="heading lg:max-w-[45vw]">
                     Ready to take <span className="text-purple">your</span> digital presence to the next level?
                 </h1>
-                <p className="text-white-200 md:mt-10 my-5 text-center">React out to me today and let's discuss how I can help you achieve your goals.</p>
+                <p className="my-5 text-center text-white-200 md:mt-10">I'm always open for new opportunities and collaborations. If you have a project in mind or just want to chat, feel free to contact me.</p>
                 <a href="mailto:garik.sandros@gmail.com">
                     <MagicButton
                         title="Let's get in touch"
@@ -21,14 +21,16 @@ const Footer = () => {
                 </a>
             </div>
 
-            <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-                <p className="md:text-base text-sm md:font-normal font-light">Copyright © 2024 Garik</p>
-
-                <div className="flex items-center md:gap-3 gap-6">
+            <div className="mt-16 flex flex-col items-center justify-between md:flex-row">
+                <p className="text-sm font-light md:text-base md:font-normal">Copyright © 2024 Garik</p>
+                <div className="flex items-center gap-6 md:gap-3">
                     {socialMedia.map((profile) => (
-                        <div key={profile.id} className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300">
-                            <img src={profile.img} alt="icons" width={20} height={20}/>
-                            <a href={profile.link} target="_blank" rel="noreferrer" className="hidden">{profile.id}</a>
+                        <div key={profile.id}
+                             className="flex h-10 w-10 items-center justify-center rounded-lg border bg-opacity-75 backdrop-blur-lg backdrop-filter saturate-180 bg-black-200 border-black-300">
+                            <a href={profile.link} target="_blank" rel="noreferrer"
+                               className="flex items-center justify-center w-full h-full">
+                                <img src={profile.img} alt="icons" width={20} height={20}/>
+                            </a>
                         </div>
                     ))}
                 </div>

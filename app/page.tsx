@@ -9,8 +9,8 @@ import Footer from "@/components/Footer";
 export default function Home() {
     return (
         <main
-            className="relative bg-black-100 flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
-            <div className="max-w-7xl w-full">
+            className="relative mx-auto flex flex-col items-center justify-center overflow-clip px-5 bg-black-100 sm:px-10">
+            <div className="w-full max-w-7xl">
                 <FloatingNav navItems={navItems} className={"top-10"}/>
                 <Hero/>
                 <Grid/>

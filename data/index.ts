@@ -8,17 +8,16 @@ export const navItems = [
 export const gridItems = [
     {
         id: 1,
-        title: "I prioritize client collaboration, fostering open communication ",
+        title: "I'm deeply passionate about web development and design in all its aspects. Why? Because it's incredible how just a few lines of code can transform the world. The possibilities are endless, and you're free to create anything you imagine.",
         description: "",
         className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
         imgClassName: "w-full h-full",
         titleClassName: "justify-end",
-        img: "/b1.svg",
         spareImg: "",
     },
     {
         id: 2,
-        title: "I'm very flexible with time zone communications",
+        title: "27-year-old Front-end Developer from Friesland, NL.",
         description: "",
         className: "lg:col-span-2 md:col-span-3 md:row-span-2",
         imgClassName: "",
@@ -49,7 +48,7 @@ export const gridItems = [
 
     {
         id: 5,
-        title: "Currently building a JS Animation library",
+        title: "Currently building a Reddit clone",
         description: "The Inside Scoop",
         className: "md:col-span-3 md:row-span-2",
         imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -73,113 +72,50 @@ export const projects = [
     {
         id: 1,
         title: "Spotify Playlist Creator",
-        des: "A web app that allows users to create Spotify playlists based on their favorite songs.",
-        img: "/p1.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+        workInProgress: true,
+        des: "A app that allows users to create Spotify playlists based on their favorite songs.",
+        img: "/spotify.png",
+        iconLists: ["/re.svg", "/tail.svg", "/fm.svg"],
         link: "https://github.com/VizeJS-dev/jammming",
     },
     {
         id: 2,
         title: "Reddit Clone",
+        workInProgress: true,
         des: "A Reddit clone that allows users to post and comment on posts.",
-        img: "/p2.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+        img: "/reddit.png",
+        iconLists: ["/re.svg", "/tail.svg", "/redux.svg"],
         link: "https://github.com/VizeJS-dev/reddit",
     }
 ];
 
-export const testimonials = [
-    {
-        quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-    {
-        quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-    {
-        quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-    {
-        quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-    {
-        quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-];
-
-export const companies = [
-    {
-        id: 1,
-        name: "cloudinary",
-        img: "/cloud.svg",
-        nameImg: "/cloudName.svg",
-    },
-    {
-        id: 2,
-        name: "appwrite",
-        img: "/app.svg",
-        nameImg: "/appName.svg",
-    },
-    {
-        id: 3,
-        name: "HOSTINGER",
-        img: "/host.svg",
-        nameImg: "/hostName.svg",
-    },
-    {
-        id: 4,
-        name: "stream",
-        img: "/s.svg",
-        nameImg: "/streamName.svg",
-    },
-    {
-        id: 5,
-        name: "docker.",
-        img: "/dock.svg",
-        nameImg: "/dockerName.svg",
-    },
-];
 
 export const workExperience = [
     {
         id: 1,
-        title: "Frontend Engineer Intern",
-        desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+        title: "Independent React.js Development",
+        desc: "Independently contributed to the development of a web-based platform using React.js, enhancing interactivity and user experience.",
         className: "md:col-span-2",
         thumbnail: "/exp1.svg",
     },
     {
         id: 2,
-        title: "Mobile App Dev - JSM Tech",
-        desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-        className: "md:col-span-2", // change to md:col-span-2
+        title: "Web Development Projects",
+        desc: "Independently designed and built web-based features using React.js, focusing on creating responsive and interactive user experiences.",
+        className: "md:col-span-2",
         thumbnail: "/exp2.svg",
     },
     {
         id: 3,
-        title: "Freelance App Dev Project",
-        desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-        className: "md:col-span-2", // change to md:col-span-2
+        title: "Full Development Lifecycle",
+        desc: "Managed the development of a web platform, handling everything from concept to deployment, with a focus on user interface improvements.",
+        className: "md:col-span-2",
         thumbnail: "/exp3.svg",
     },
     {
         id: 4,
-        title: "Lead Frontend Developer",
-        desc: "Developed and maintained user-facing features using modern frontend technologies.",
+        title: "User-Facing Features",
+        desc: "Developed and maintained user-facing features using modern frontend tools and frameworks, including React and JavaScript, working autonomously.",
         className: "md:col-span-2",
         thumbnail: "/exp4.svg",
     },
@@ -196,4 +132,9 @@ export const socialMedia = [
         img: "/link.svg",
         link: "https://www.linkedin.com/in/garik-sandrosyan-5b010a2b3/"
     },
+    {
+        id: 3,
+        img: "/instagram.svg",
+        link: "https://www.instagram.com/garik.sandros/"
+    }
 ];

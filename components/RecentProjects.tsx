@@ -1,7 +1,5 @@
 "use client";
 
-import { FaLocationArrow } from "react-icons/fa6";
-
 import { projects } from "@/data";
 import { PinContainer } from "@/components/ui/3d-pin";
 
@@ -12,19 +10,19 @@ const RecentProjects = () => {
                 A small selection of{" "}
                 <span className="text-purple">recent projects</span>
             </h1>
-            <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+            <div className="mt-10 flex flex-wrap items-center justify-center gap-16 p-4">
                 {projects.map((item) => (
                     <div
-                        className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+                        className="flex items-center justify-center h-[25rem] w-[80vw] sm:w-96 lg:min-h-[32.5rem]"
                         key={item.id}
                     >
                         <PinContainer
                             title={item.link}
                             href={item.link}
                         >
-                            <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+                            <div className="relative mb-10 flex items-center justify-center overflow-hidden w-[80vw] h-[20vh] sm:w-96 lg:h-[30vh]">
                                 <div
-                                    className="relative w-full h-full overflow-hidden lg:rounded-3xl"
+                                    className="relative h-full w-full overflow-hidden lg:rounded-3xl"
                                     style={{ backgroundColor: "#13162D" }}
                                 >
                                     <img src="/bg.png" alt="bgimg" />
@@ -32,16 +30,17 @@ const RecentProjects = () => {
                                 <img
                                     src={item.img}
                                     alt="cover"
-                                    className="z-10 absolute bottom-0"
+                                    className="absolute bottom-0 z-10"
                                 />
                             </div>
 
-                            <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
-                                {item.title}
+                            <h1 className="text-base font-bold line-clamp-1 md:text-xl lg:text-2xl">
+                                {/*add a work in progress tag if item.workInProgress is true*/}
+                                {item.title} {item.workInProgress && <span className="text-xs text-red">WIP</span>}
                             </h1>
 
                             <p
-                                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
+                                className="text-sm font-light line-clamp-2 lg:text-xl lg:font-normal"
                                 style={{
                                     color: "#BEC1DD",
                                     margin: "1vh 0",
@@ -50,12 +49,12 @@ const RecentProjects = () => {
                                 {item.des}
                             </p>
 
-                            <div className="flex items-center justify-between mt-7 mb-3">
+                            <div className="mt-7 mb-3 flex items-center justify-between">
                                 <div className="flex items-center">
                                     {item.iconLists.map((icon, index) => (
                                         <div
                                             key={index}
-                                            className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                                            className="flex h-8 w-8 items-center justify-center rounded-full border bg-black border-white/[.2] lg:h-10 lg:w-10"
                                             style={{
                                                 transform: `translateX(-${5 * index + 2}px)`,
                                             }}
@@ -63,13 +62,6 @@ const RecentProjects = () => {
                                             <img src={icon} alt="icon5" className="p-2" />
                                         </div>
                                     ))}
-                                </div>
-
-                                <div className="flex justify-center items-center">
-                                    <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                                        Check Live Site
-                                    </p>
-                                    <FaLocationArrow className="ms-3" color="#CBACF9" />
                                 </div>
                             </div>
                         </PinContainer>
