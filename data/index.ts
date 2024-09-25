@@ -71,12 +71,12 @@ export const gridItems = [
 export const projects = [
     {
         id: 1,
-        title: "Spotify Playlist Creator",
+        title: "Listify",
         workInProgress: true,
         des: "A app that allows users to create Spotify playlists based on their favorite songs.",
         img: "/spotify.png",
-        iconLists: ["/re.svg", "/tail.svg", "/fm.svg"],
-        link: "https://github.com/VizeJS-dev/jammming",
+        iconLists: ["/next.svg","/re.svg", "/tail.svg", "/fm.svg"],
+        link: "https://listify-inky.vercel.app/",
     },
     {
         id: 2,
