@@ -27,13 +27,22 @@ const Hero = () => {
                         Hi, I&apos;m Garik Sandrosyan, a Front-end Developer passionate about building engaging and
                         impactful user experiences.
                     </p>
-                    <a href="#projects">
-                        <MagicButton
-                            title="Show my work"
-                            icon={<FaLocationArrow/>}
-                            position={"right"}
-                        />
-                    </a>
+                    <div className="flex flex-col gap-2 md:flex-row">
+                        <a href="#projects">
+                            <MagicButton
+                                title="Show my work"
+                                icon={<FaLocationArrow/>}
+                                position={"right"}
+                            />
+                        </a>
+                        <a href="https://github.com/VizeJS-dev" target="_blank" rel="noopener noreferrer">
+                            <MagicButton
+                                title="Visit my GitHub"
+                                icon={<FaLocationArrow/>}
+                                position={"right"}
+                            />
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

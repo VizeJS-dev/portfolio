@@ -74,7 +74,7 @@ export const projects = [
         title: "Listify",
         workInProgress: true,
         des: "A app that allows users to create Spotify playlists based on their favorite songs.",
-        img: "/spotify.png",
+        img: "/listify.png",
         iconLists: ["/next.svg","/re.svg", "/tail.svg", "/fm.svg"],
         link: "https://listify-inky.vercel.app/",
     },
