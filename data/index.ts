@@ -134,7 +134,7 @@ export const socialMedia = [
     },
     {
         id: 3,
-        img: "/instagram.svg",
+        img: "/insta.svg",
         link: "https://www.instagram.com/garik.sandros/"
     }
 ];
